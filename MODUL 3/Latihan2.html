@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Contoh Form </title>
+    </head>
+
+    <body>
+        <font type = "arial black" font size="6"> Data Diri</font>
+        <br><br>
+
+        <form action="simpan_data.html" method="post">
+            <font type="arial" size="5">
+                Nama : <input type="text" name="nama" required>
+                <br><br>
+
+                NIM : <input type="text" name="nim" value="" maxlength="9" size="9">
+                <br><br>
+            </font>
+            
+            E-mail:
+            <input type="email" name="email" required><br><br>
+
+            Password:
+            <input type="password" name="pass" size="11" maxlength="9" required><br><br>
+
+            Tanggal Lahir:
+            <input type="date" name="bday"><br><br>
+
+            Jenis Kelamin:
+            <input type="radio" name="jenis_kelamin" value="L"> Laki-Laki 
+            <br>
+            <input type="radio" name="jenis_kelamin" value="P"> Perempuan 
+            <br><br>
+
+            Pilih Hobi Anda (Boleh lebih dari satu):
+            <br>
+            <input type="checkbox" name="hobi_1" value="Menonton Anime"> Menonton Anime 
+            <br>
+            <input type="checkbox" name="hobi_2" value="Main Game"> Main Game
+            <br>
+            <input type="checkbox" name="hobi_3" value="Membaca Komik"> Membaca Komik
+            <br>
+            <input type="checkbox" name="hobi_4" value="Rebahan"> Rebahan
+            <br>
+            <input type="checkbox" name="hobi_5" value="Olahraga"> Olahraga 
+            <br><br>
+
+            Asal Kota:
+            <select name="asal_kota">
+                <option value="Kota Banjarmasin"> Banjarmasin </option>
+                <option value="Kota Bandung"> Bandung </option>
+                <option value="Kota Banjarbaru" selected> Banjarbaru</option>
+            </select>
+            <br><br>
+
+            Komentar Anda:
+            <br>
+            <textarea name="komentar" cols="20" rows="5">
+                Sialhkan isi komentar Anda
+            </textarea>
+            <br><br>
+
+            <input type="reset" name="Ulangi" value="Reset">
+            <input type="submit" name="kirim" valie="Submit">
+            <input type="button" name="Batal" value="Cancel">
+            <br><br>
+            <input type="image" name="Gambar" img src="https://w7.pngwing.com/pngs/427/74/png-transparent-right-arrow-sign-illustration-angle-symbol-font-arrow-next-4-angle-next-3-next-2-thumbnail.png"
+            width="150" height="150">
+
+        </form>
+    </body>
+</html>
